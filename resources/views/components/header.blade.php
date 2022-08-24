@@ -1,3 +1,59 @@
+<?php 
+    $navList = [
+        [
+            'text' => 'CHARACTERS',
+            'active' => 'disable',
+            'route' => 'characters'
+        ],
+        [
+            'text' => 'COMICS',
+            'active' => 'current',
+            'route' => 'comics'
+        ],
+        [
+            'text' => 'MOVIES',
+            'active' => 'disable',
+            'route' => 'movies'
+        ],
+        [
+            'text' => 'TV',
+            'active' => 'disable',
+            'route' => 'home'
+        ],
+        [
+            'text' => 'GAMES',
+            'active' => 'disable',
+            'route' => 'home'
+        ],
+        [
+            'text' => 'COLLECTIONS',
+            'active' => 'disable',
+            'route' => 'home'
+        ],
+        [
+            'text' => 'VIDEO',
+            'active' => 'disable',
+            'route' => 'home'
+        ],
+        [
+            'text' => 'FANS',
+            'active' => 'disable',
+            'route' => 'home'
+        ],
+        [
+            'text' => 'NEWS',
+            'active' => 'disable',
+            'route' => 'home'
+        ],
+        [
+            'text' => 'SHOP',
+            'active' => 'disable',
+            'route' => 'home'
+        ]
+    ]
+?>
+
+
 <header>
     <div class="header">
         <div class="container flex">
@@ -8,33 +64,11 @@
             <!-- Nav -->
             <nav>
                 <ul class="flex">
-                    <li>
-                        <a href="">CHARACTERS</a>
-                    </li>
-                    <li class="current">
-                        <a href="{{ route('comics') }}">COMICS</a>
-                    </li>
-                    <li>
-                        <a href="">MOVIES</a>
-                    </li>
-                    <li>
-                        <a href="">TV</a>
-                    </li>
-                    <li>
-                        <a href="">GAMES</a>
-                    </li>
-                    <li>
-                        <a href="">COLLECTIONS</a>
-                    </li>
-                    <li>
-                        <a href="">VIDEOS</a>
-                    </li>
-                    <li>
-                        <a href="">FANS</a>
-                    </li>
-                    <li>
-                        <a href="">SHOP</a>
-                    </li>
+                    @foreach ($navList as $item)
+                        <li class="{{$item['active']}}">
+                            <a href="{{ route($item['route']) }}">{{ $item['text']}}</a>
+                        </li>
+                    @endforeach
                 </ul>
             </nav>
         </div>

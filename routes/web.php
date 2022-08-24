@@ -30,3 +30,13 @@ Route::get('/comics', function () {
 
     return view('comics', $data);
 })->name('comics');
+
+// Characters
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
+
+// Movies
+Route::get('/movies', function () {
+    return view('movies');
+})->name('movies');
