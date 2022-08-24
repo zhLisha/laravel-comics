@@ -1,0 +1,52 @@
+.jumbotron-bg {
+    height: 370px;
+    background-image: url('../../../public/img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+
+    .container {
+        height: 100%;
+        background-image: url('../../../public/img/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .footer-list {
+        a {
+            font-size: 11px;
+            font-weight: 300;
+            color: $footerFontColor;
+        }
+    }
+    
+    .content-list {
+        padding-top: 30px;
+    
+        .title {
+            font-weight: 700;
+            padding-top: 20px;
+            padding-bottom: 5px;
+        }
+    }
+    
+    .list-container {
+        ul {
+            padding-right: 20px;
+        }
+    }
+
+    .copy {
+        width: 40%;
+        padding: 20px 0;
+        color: $footerFontColor;
+        font-size: 12px;
+        font-weight: 300;
+
+        a {
+            color: $mainColor;
+        }
+    }
+}
+

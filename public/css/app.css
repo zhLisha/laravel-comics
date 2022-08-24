@@ -170,3 +170,51 @@ a {
   align-items: center;
 }
 
+.jumbotron-bg {
+  height: 370px;
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.jumbotron-bg .container {
+  height: 100%;
+  background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.jumbotron-bg .footer-list a {
+  font-size: 11px;
+  font-weight: 300;
+  color: #959595;
+}
+
+.jumbotron-bg .content-list {
+  padding-top: 30px;
+}
+
+.jumbotron-bg .content-list .title {
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.jumbotron-bg .list-container ul {
+  padding-right: 20px;
+}
+
+.jumbotron-bg .copy {
+  width: 40%;
+  padding: 20px 0;
+  color: #959595;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.jumbotron-bg .copy a {
+  color: #0282f9;
+}
+
