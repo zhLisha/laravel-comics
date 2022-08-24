@@ -1,0 +1,33 @@
+.footer-social {
+    height: 80px;
+    background-color: $footerBgColor;
+
+    .container {
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .btn {
+        color: $mainFontColor;
+        border: 2px solid $mainColor;
+        padding: 10px 15px;
+        font-size: 12px;
+        display: block;
+    }
+}
+
+.social {
+    span {
+        color: $mainColor;
+        vertical-align: middle;
+        height: 100%;
+        align-items: center;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    li {
+        padding-left: 15px;
+    }
+}

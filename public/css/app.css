@@ -218,3 +218,35 @@ a {
   color: #0282f9;
 }
 
+.footer-social {
+  height: 80px;
+  background-color: #303030;
+}
+
+.footer-social .container {
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-social .btn {
+  color: white;
+  border: 2px solid #0282f9;
+  padding: 10px 15px;
+  font-size: 12px;
+  display: block;
+}
+
+.social span {
+  color: #0282f9;
+  vertical-align: middle;
+  height: 100%;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.social li {
+  padding-left: 15px;
+}
+

@@ -29,7 +29,7 @@
             <li>
                 <a href="#" class="flex">
                     <div class="icon">
-                        <img src="{{ $icon['icon'] }}">
+                        <img src="{{ asset($icon['icon']) }}" alt="Logo {{$icon['text']}}">
                     </div>
                     <div class="icon-name">
                         <span>{{ $icon['text'] }}</span>
