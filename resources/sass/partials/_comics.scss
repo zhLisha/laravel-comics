@@ -1,0 +1,62 @@
+.main-content {
+    background-color: $secondColor;
+    color: $mainFontColor;
+
+    .container {
+        text-align: center;
+        position: relative;
+    }
+
+    .series-list {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 35px 0;
+        position: relative;
+        text-align: left;
+    }
+
+    .current-series {
+        position: absolute;
+        padding: 10px 25px;
+        font-size: 20px;
+        top: -23px;
+        left: -20px;
+    }
+
+    .btn {
+        background-color: $mainColor;
+        border: none;
+        color: $mainFontColor;
+        font-weight: 700;
+    }
+
+   button {
+        padding: 10px 50px;
+        font-size: 12px;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+}
+
+
+.card {
+    margin:20px 0;
+    width: calc((100% / 6) - 20px);
+
+    .image {
+        object-fit: cover;
+        overflow: hidden;
+        object-position: top;
+        margin-bottom: 15px;
+        aspect-ratio: 1/1;
+    }
+
+    .thumb-title {
+        font-size: 11.5px;
+
+        span {
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+    }
+}

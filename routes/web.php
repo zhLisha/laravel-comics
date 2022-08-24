@@ -20,5 +20,13 @@ Route::get('/', function () {
 
 // Comics
 Route::get('/comics', function () {
-    return view('comics');
+
+    // Importo array dei comics
+    $comicsList = config('comics');
+
+    $data = [
+        'comics' => $comicsList
+    ];
+
+    return view('comics', $data);
 })->name('comics');

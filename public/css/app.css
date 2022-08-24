@@ -77,3 +77,67 @@ a {
   background-size: cover;
 }
 
+.main-content {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.main-content .container {
+  text-align: center;
+  position: relative;
+}
+
+.main-content .series-list {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 35px 0;
+  position: relative;
+  text-align: left;
+}
+
+.main-content .current-series {
+  position: absolute;
+  padding: 10px 25px;
+  font-size: 20px;
+  top: -23px;
+  left: -20px;
+}
+
+.main-content .btn {
+  background-color: #0282f9;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+
+.main-content button {
+  padding: 10px 50px;
+  font-size: 12px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.card {
+  margin: 20px 0;
+  width: calc(16.6666666667% - 20px);
+}
+
+.card .image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  -o-object-position: top;
+     object-position: top;
+  margin-bottom: 15px;
+  aspect-ratio: 1/1;
+}
+
+.card .thumb-title {
+  font-size: 11.5px;
+}
+
+.card .thumb-title span {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
