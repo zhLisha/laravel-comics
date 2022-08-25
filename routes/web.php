@@ -48,8 +48,20 @@ Route::get('/comics/{id}', function($id) {
     // Importo array dei comics
     $comicsList = config('comics');
 
+    $singleProduct = [];
+
+   foreach($comicsList as $comic) {
+
+        if ($comic['id'] == $id) {
+            $singleProduct[] = $comic;
+        } 
+        // else {
+        //     abort('404');
+        // }
+    };
+
     $data = [
-        'comics' => $comicsList
+        'productDetail' => $singleProduct
     ];
 
     return view('product_details', $data);
