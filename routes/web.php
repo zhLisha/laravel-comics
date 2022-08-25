@@ -40,3 +40,18 @@ Route::get('/characters', function () {
 Route::get('/movies', function () {
     return view('movies');
 })->name('movies');
+
+
+// Products details
+Route::get('/comics/{id}', function($id) {
+    
+    // Importo array dei comics
+    $comicsList = config('comics');
+
+    $data = [
+        'comics' => $comicsList
+    ];
+
+    return view('product_details', $data);
+
+})->name('product_details');

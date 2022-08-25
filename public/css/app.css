@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;
-
-700&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,6 +28,11 @@ a {
   margin: 0 auto;
 }
 
+.small-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .flex {
   display: flex;
 }
@@ -37,32 +40,26 @@ a {
 .header {
   height: 100px;
 }
-
 .header img {
   width: 60px;
   display: inline-block;
   padding-top: 8px;
 }
-
 .header .container {
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
-
 .header ul {
   font-size: 11px;
   font-weight: 700;
 }
-
 .header ul li {
   padding-left: 20px;
 }
-
 .header ul .current {
   color: #0282f9;
 }
-
 .header ul .current::after {
   content: "";
   border-bottom: 2px solid #0282f9;
@@ -72,7 +69,7 @@ a {
 
 .top-jumbotron {
   height: 300px;
-  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-image: url("/img/jumbotron.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -81,12 +78,10 @@ a {
   background-color: #1c1c1c;
   color: white;
 }
-
 .main-content .container {
   text-align: center;
   position: relative;
 }
-
 .main-content .series-list {
   justify-content: space-between;
   flex-wrap: wrap;
@@ -94,7 +89,6 @@ a {
   position: relative;
   text-align: left;
 }
-
 .main-content .current-series {
   position: absolute;
   padding: 10px 25px;
@@ -102,14 +96,12 @@ a {
   top: -23px;
   left: -20px;
 }
-
 .main-content .btn {
   background-color: #0282f9;
   border: none;
   color: white;
   font-weight: 700;
 }
-
 .main-content button {
   padding: 10px 50px;
   font-size: 12px;
@@ -121,7 +113,6 @@ a {
   margin: 20px 0;
   width: calc(16.6666666667% - 20px);
 }
-
 .card .image {
   -o-object-fit: cover;
      object-fit: cover;
@@ -131,11 +122,9 @@ a {
   margin-bottom: 15px;
   aspect-ratio: 1/1;
 }
-
 .card .thumb-title {
   font-size: 11.5px;
 }
-
 .card .thumb-title span {
   text-transform: uppercase;
   font-weight: 300;
@@ -146,7 +135,6 @@ a {
   background-color: #0282f9;
   color: white;
 }
-
 .main-icons .small-container {
   height: 100%;
   align-items: center;
@@ -155,57 +143,48 @@ a {
   width: 75%;
   margin: 0 auto;
 }
-
 .main-icons img {
   width: 35px;
 }
-
 .main-icons .icon-name {
   font-size: 11px;
   font-weight: 300;
   padding-left: 10px;
 }
-
 .main-icons a {
   align-items: center;
 }
 
 .jumbotron-bg {
   height: 370px;
-  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-image: url("/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   color: white;
 }
-
 .jumbotron-bg .container {
   height: 100%;
-  background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
+  background-image: url("/img/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-position: right;
 }
-
 .jumbotron-bg .footer-list a {
   font-size: 11px;
   font-weight: 300;
   color: #959595;
 }
-
 .jumbotron-bg .content-list {
   padding-top: 30px;
 }
-
 .jumbotron-bg .content-list .title {
   font-weight: 700;
   padding-top: 20px;
   padding-bottom: 5px;
 }
-
 .jumbotron-bg .list-container ul {
   padding-right: 20px;
 }
-
 .jumbotron-bg .copy {
   width: 40%;
   padding: 20px 0;
@@ -213,7 +192,6 @@ a {
   font-size: 12px;
   font-weight: 300;
 }
-
 .jumbotron-bg .copy a {
   color: #0282f9;
 }
@@ -222,13 +200,11 @@ a {
   height: 80px;
   background-color: #303030;
 }
-
 .footer-social .container {
   height: 100%;
   align-items: center;
   justify-content: space-between;
 }
-
 .footer-social .btn {
   color: white;
   border: 2px solid #0282f9;
@@ -245,8 +221,62 @@ a {
   font-weight: 700;
   font-size: 18px;
 }
-
 .social li {
   padding-left: 15px;
 }
 
+.product-details .top-layer {
+  height: 80px;
+  background-color: #0282f9;
+}
+.product-details .thumb img {
+  width: 150px;
+  position: absolute;
+  bottom: 440px;
+}
+.product-details .small-container {
+  position: relative;
+  padding: 70px 0;
+  justify-content: space-between;
+}
+.product-details .small-container .details {
+  margin-right: 30px;
+  width: 65%;
+}
+.product-details .small-container .details .title {
+  color: #003f5e;
+  font-size: 30px;
+  font-weight: 700;
+}
+.product-details .small-container .details .price-avalaibility {
+  margin: 25px 0;
+  font-size: 14px;
+  background-color: #55ba59;
+  box-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.757);
+}
+.product-details .small-container .details .price-avalaibility .price {
+  align-items: center;
+  width: 65%;
+  padding: 14px 40px;
+  font-weight: 700;
+  color: #bafd93;
+  width: 70%;
+  justify-content: space-between;
+  border-right: 1px solid rgba(0, 0, 0, 0.757);
+}
+.product-details .small-container .details .price-avalaibility .cta-avalaibility {
+  width: 35%;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  padding: 14px 30px;
+}
+.product-details .small-container .details .price-avalaibility .cta-avalaibility .chevron-down {
+  font-size: 8px;
+}
+
+.advertisement {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+}
