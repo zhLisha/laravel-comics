@@ -2,52 +2,52 @@
     $navList = [
         [
             'text' => 'CHARACTERS',
-            'active' => 'disable',
+            // 'active' => 'disable',
             'route' => 'characters'
         ],
         [
             'text' => 'COMICS',
-            'active' => 'current',
+            // 'active' => 'current',
             'route' => 'comics'
         ],
         [
             'text' => 'MOVIES',
-            'active' => 'disable',
+            // 'active' => 'disable',
             'route' => 'movies'
         ],
         [
             'text' => 'TV',
-            'active' => 'disable',
+            // 'active' => 'disable',
             'route' => 'home'
         ],
         [
             'text' => 'GAMES',
-            'active' => 'disable',
+            // 'active' => 'disable',
             'route' => 'home'
         ],
         [
             'text' => 'COLLECTIONS',
-            'active' => 'disable',
+            // 'active' => 'disable',
             'route' => 'home'
         ],
         [
             'text' => 'VIDEO',
-            'active' => 'disable',
+            // 'active' => 'disable',
             'route' => 'home'
         ],
         [
             'text' => 'FANS',
-            'active' => 'disable',
+            // 'active' => 'disable',
             'route' => 'home'
         ],
         [
             'text' => 'NEWS',
-            'active' => 'disable',
+            // 'active' => 'disable',
             'route' => 'home'
         ],
         [
             'text' => 'SHOP',
-            'active' => 'disable',
+            // 'active' => 'disable',
             'route' => 'home'
         ]
     ]
@@ -65,7 +65,7 @@
             <nav>
                 <ul class="flex">
                     @foreach ($navList as $item)
-                        <li class="{{$item['active']}}">
+                        <li class="{{ Route::current()->getName() === $item['route'] ? 'current' : '' }}">
                             <a href="{{ route($item['route']) }}">{{ $item['text']}}</a>
                         </li>
                     @endforeach
