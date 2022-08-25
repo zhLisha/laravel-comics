@@ -8,7 +8,9 @@
         <ul class="series-list flex">
             @foreach ($comics as $comic) 
                 <li class="card"> 
-                    <a href="#">
+                    <a href="{{ route('product_details', [
+                        'id' => $comic['id']
+                    ]) }}">
                         <div class="image">
                             <img src="{{$comic['thumb']}}" :alt="">
                         </div>
