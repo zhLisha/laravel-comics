@@ -10,5 +10,5 @@
     @include('small-components/product_details_text')
 
     {{-- Specs --}}
-    
+    @include('small-components/product_details_specs')
 @endsection

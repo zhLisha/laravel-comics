@@ -1,22 +1,24 @@
 .product-details {
 
     .top-layer {
+        
         height: 80px;
         background-color: $mainColor;
-    }
-
-    .thumb {
-        img {
-            width: 150px;
-            position: absolute;
-            bottom: 440px;
-        }
     }
 
     .small-container {
         position: relative;
         padding: 70px 0;
         justify-content: space-between;
+
+        .thumb {
+            img {
+                width: 150px;
+                position: absolute;
+                top: -250px;
+                left: 0;
+            }
+        }
 
         .details {
             margin-right: 30px;
@@ -61,3 +63,84 @@
     }
 
 }
+
+.product-specs {
+    background-color: $detailsSpecsBg;
+    border-top: 1px solid $detailsSpecsIcons;
+    border-bottom: 1px solid $detailsSpecsIcons;
+    padding-top: 30px;
+    
+    & > .small-container {
+        justify-content: space-between;
+        padding-bottom: 90px;
+
+        .talent {
+            width: 50%;
+            margin-right: 50px;
+
+            & > .title {
+                padding-bottom: 20px;
+                border-bottom: 1px solid $detailsSpecsIcons;
+            }
+        }
+
+        .specs {
+            width: 50%;
+
+            & > .title {
+                padding-bottom: 20px;
+                border-bottom: 1px solid $detailsSpecsIcons;
+            }
+        }
+
+        .categories {
+            font-size: 11px;
+            padding: 13px 0;
+            border-bottom: 1px solid $detailsSpecsIcons;
+
+            .title {
+                width: 30%;
+            }
+            .content {
+                width: 70%;
+                color: $detailLink;
+            }
+        }
+    }
+
+    .merchandising {
+        border-top: 1px solid $detailsSpecsIcons;
+
+        img {
+            height: 30px;
+            width: auto;
+        }
+
+        ul {
+            justify-content: space-between;
+
+            li:last-child {
+                border-right: 1px solid $detailsSpecsIcons;
+            }
+            
+            li {
+                width: 100%;
+                padding: 15px;
+                border-left: 1px solid $detailsSpecsIcons;
+
+                a {
+                    justify-content: space-between;
+
+                    span {
+                        color: $a6a7ab;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// border-bottom: 1px solid $detailsSpecsIcons;

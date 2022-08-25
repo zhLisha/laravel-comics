@@ -29,7 +29,7 @@ a {
 }
 
 .small-container {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
 }
 
@@ -229,15 +229,16 @@ a {
   height: 80px;
   background-color: #0282f9;
 }
-.product-details .thumb img {
-  width: 150px;
-  position: absolute;
-  bottom: 440px;
-}
 .product-details .small-container {
   position: relative;
   padding: 70px 0;
   justify-content: space-between;
+}
+.product-details .small-container .thumb img {
+  width: 150px;
+  position: absolute;
+  top: -250px;
+  left: 0;
 }
 .product-details .small-container .details {
   margin-right: 30px;
@@ -273,6 +274,69 @@ a {
 }
 .product-details .small-container .details .price-avalaibility .cta-avalaibility .chevron-down {
   font-size: 8px;
+}
+
+.product-specs {
+  background-color: #f6f6f6;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  padding-top: 30px;
+}
+.product-specs > .small-container {
+  justify-content: space-between;
+  padding-bottom: 90px;
+}
+.product-specs > .small-container .talent {
+  width: 50%;
+  margin-right: 50px;
+}
+.product-specs > .small-container .talent > .title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.product-specs > .small-container .specs {
+  width: 50%;
+}
+.product-specs > .small-container .specs > .title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.product-specs > .small-container .categories {
+  font-size: 11px;
+  padding: 13px 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+.product-specs > .small-container .categories .title {
+  width: 30%;
+}
+.product-specs > .small-container .categories .content {
+  width: 70%;
+  color: #5ac1e9;
+}
+.product-specs .merchandising {
+  border-top: 1px solid #dcdcdc;
+}
+.product-specs .merchandising img {
+  height: 30px;
+  width: auto;
+}
+.product-specs .merchandising ul {
+  justify-content: space-between;
+}
+.product-specs .merchandising ul li:last-child {
+  border-right: 1px solid #dcdcdc;
+}
+.product-specs .merchandising ul li {
+  width: 100%;
+  padding: 15px;
+  border-left: 1px solid #dcdcdc;
+}
+.product-specs .merchandising ul li a {
+  justify-content: space-between;
+}
+.product-specs .merchandising ul li a span {
+  color: #959595;
+  font-size: 11px;
 }
 
 .advertisement {
