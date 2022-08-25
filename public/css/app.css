@@ -275,6 +275,9 @@ a {
 .product-details .small-container .details .price-avalaibility .cta-avalaibility .chevron-down {
   font-size: 8px;
 }
+.product-details .small-container .advertisement {
+  width: 35%;
+}
 
 .product-specs {
   background-color: #f6f6f6;
@@ -335,7 +338,7 @@ a {
   justify-content: space-between;
 }
 .product-specs .merchandising ul li a span {
-  color: #959595;
+  color: #a6a7ab;
   font-size: 11px;
 }
 
