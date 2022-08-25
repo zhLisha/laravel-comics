@@ -54,10 +54,11 @@ Route::get('/comics/{id}', function($id) {
 
         if ($comic['id'] == $id) {
             $singleProduct[] = $comic;
-        } 
-        // else {
-        //     abort('404');
-        // }
+        }
+    };
+
+    if(empty($singleProduct)) {
+        abort('404');
     };
 
     $data = [
