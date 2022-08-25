@@ -41,6 +41,7 @@
                             <a href="#">
                                 {{ $name }}
                             </a>
+                            @if(!$loop->last), @endif
                         @endforeach
                     </div>
                 </div>
@@ -55,6 +56,7 @@
                             <a href="#">
                                 {{ $name }}
                             </a>
+                            @if(!$loop->last), @endif
                         @endforeach
                     </div>
                 </div>
